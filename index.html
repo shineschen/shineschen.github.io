@@ -107,6 +107,7 @@
 <h2 id="5、避坑！！！！！！！！："><a href="#5、避坑！！！！！！！！：" class="headerlink" title="5、避坑！！！！！！！！："></a>5、避坑！！！！！！！！：</h2><p>保证mumu模拟器<a target="_blank" rel="noopener" href="https://so.csdn.net/so/search?q=ADB">ADB</a>版本号与SDK的abd版本一致</p>
 <p>将SDK的abd复制到mumu模拟器路径下并修改文件名，替换原有文件</p>
 <p>adb.exe 替换 abd_server.exe  并改名为abd_server.exe</p>
+<p>真机测试时定位时添加属性<br>“automationName”: “uiautomator2”</p>
 <h3 id="查看appPackage和appActivity的方法"><a href="#查看appPackage和appActivity的方法" class="headerlink" title="查看appPackage和appActivity的方法"></a>查看appPackage和appActivity的方法</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 查看包名</span></span><br><span class="line">adb shell pm list package</span><br><span class="line"><span class="meta">#</span><span class="bash"> 查看Activity</span></span><br><span class="line">adb shell</span><br><span class="line">dumpsys activity | grep 包名</span><br></pre></td></tr></table></figure>
 
 <p><img src="https://img-blog.csdnimg.cn/20190813170502325.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTAyNDQ1MjI=,size_16,color_FFFFFF,t_70" alt="img"></p>
