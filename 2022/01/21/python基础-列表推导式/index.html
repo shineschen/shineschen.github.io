@@ -13,14 +13,10 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="1、创建一个列表，然后使用for循环将该列表中的数据添加到另一个列表中1234567heroes &#x3D; [&quot;亚瑟&quot;, &quot;妲己&quot;, &quot;橘右京&quot;, &quot;阿轲&quot;, &quot;王昭君&quot;, &quot;马化腾&quot;]  # 原始列表## 创建一个新列表hero_name，分别将heroes中的值追加到其中## 1、">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://example.com/2022/01/21/python%E5%9F%BA%E7%A1%80-%E5%88%97%E8%A1%A8%E6%8E%A8%E5%AF%BC%E5%BC%8F/da7af03611f8f8361b18ef6bca079f5c.png">
-<meta property="og:image" content="http://example.com/2022/01/21/python%E5%9F%BA%E7%A1%80-%E5%88%97%E8%A1%A8%E6%8E%A8%E5%AF%BC%E5%BC%8F/914ad6e36632386a19f25843022778a6.png">
-<meta property="og:image" content="http://example.com/2022/01/21/python%E5%9F%BA%E7%A1%80-%E5%88%97%E8%A1%A8%E6%8E%A8%E5%AF%BC%E5%BC%8F/da3cf7682fe58e583f3045ec8ebca04b.png">
 <meta property="article:published_time" content="2022-01-21T09:01:48.982Z">
-<meta property="article:modified_time" content="2022-01-21T09:01:48.982Z">
+<meta property="article:modified_time" content="2022-01-21T09:12:17.074Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/2022/01/21/python%E5%9F%BA%E7%A1%80-%E5%88%97%E8%A1%A8%E6%8E%A8%E5%AF%BC%E5%BC%8F/da7af03611f8f8361b18ef6bca079f5c.png">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -91,19 +87,21 @@
       
         <h3 id="1、创建一个列表，然后使用for循环将该列表中的数据添加到另一个列表中"><a href="#1、创建一个列表，然后使用for循环将该列表中的数据添加到另一个列表中" class="headerlink" title="1、创建一个列表，然后使用for循环将该列表中的数据添加到另一个列表中"></a>1、创建一个列表，然后使用for循环将该列表中的数据添加到另一个列表中</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">heroes = [<span class="string">&quot;亚瑟&quot;</span>, <span class="string">&quot;妲己&quot;</span>, <span class="string">&quot;橘右京&quot;</span>, <span class="string">&quot;阿轲&quot;</span>, <span class="string">&quot;王昭君&quot;</span>, <span class="string">&quot;马化腾&quot;</span>]  <span class="comment"># 原始列表</span></span><br><span class="line"><span class="comment">## 创建一个新列表hero_name，分别将heroes中的值追加到其中</span></span><br><span class="line"><span class="comment">## 1、使用for循环+append方法实现</span></span><br><span class="line">hero_name = []</span><br><span class="line"><span class="keyword">for</span> hero <span class="keyword">in</span> heroes:</span><br><span class="line">    hero_name.append(hero)</span><br><span class="line"><span class="built_in">print</span>(hero_name)</span><br></pre></td></tr></table></figure>
 
+<br/>
+
 <h3 id="2、使用列表推导来将数据添加到一个新列表中"><a href="#2、使用列表推导来将数据添加到一个新列表中" class="headerlink" title="2、使用列表推导来将数据添加到一个新列表中"></a>2、使用列表推导来将数据添加到一个新列表中</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 2、使用列表推导，将heroes中的数据取出来放到一个新列表中</span></span><br><span class="line">hero_name = [hero <span class="keyword">for</span> hero <span class="keyword">in</span> heroes]</span><br><span class="line"><span class="built_in">print</span>(hero_name)</span><br></pre></td></tr></table></figure>
 
-<p>打印结果如下：</p>
-<p><img src="da7af03611f8f8361b18ef6bca079f5c.png" alt="screen-capture"></p>
+<br/>
+
+<br/>
+
 <h3 id="3、在列表推导式中加上if语句"><a href="#3、在列表推导式中加上if语句" class="headerlink" title="3、在列表推导式中加上if语句"></a>3、在列表推导式中加上if语句</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 结合if语句，例如取出来名称长度大于2的值</span></span><br><span class="line">hero_name = [hero <span class="keyword">for</span> hero <span class="keyword">in</span> heroes <span class="keyword">if</span> <span class="built_in">len</span>(hero) &gt; <span class="number">2</span>]</span><br><span class="line"><span class="built_in">print</span>(hero_name)</span><br></pre></td></tr></table></figure>
 
-<p>打印结果如下：</p>
-<p><img src="914ad6e36632386a19f25843022778a6.png" alt="screen-capture"></p>
+<br/>
+
+<br/>
+
 <h3 id="4、看一个复杂的例子，2个for循环如何转换成列表推导式"><a href="#4、看一个复杂的例子，2个for循环如何转换成列表推导式" class="headerlink" title="4、看一个复杂的例子，2个for循环如何转换成列表推导式"></a>4、看一个复杂的例子，2个for循环如何转换成列表推导式</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">nums = [[<span class="number">1</span>, <span class="number">3</span>, <span class="number">5</span>, <span class="number">7</span>], [<span class="number">2</span>, <span class="number">4</span>, <span class="number">6</span>, <span class="number">8</span>]]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 使上述nums中的每个数字都取出来，放到一个新列表中，用到2个for循环</span></span><br><span class="line">new_nums = []</span><br><span class="line"><span class="keyword">for</span> nums_a <span class="keyword">in</span> nums:</span><br><span class="line">    <span class="comment"># print(nums_a)</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> nums_a:</span><br><span class="line">        new_nums.append(i)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;new_nums的值为：&#123;&#125;&quot;</span>.<span class="built_in">format</span>(new_nums))</span><br><span class="line"></span><br><span class="line"><span class="comment"># 列表推导式</span></span><br><span class="line">new_num = [i <span class="keyword">for</span> nums_a <span class="keyword">in</span> nums <span class="keyword">for</span> i <span class="keyword">in</span> nums_a]</span><br><span class="line"><span class="comment"># 从左至右，分别是外层循环到内层循环;先把里面的2个小列表遍历一遍，然后再遍历每个小列表的数字；</span></span><br><span class="line"><span class="comment"># 最后的表示结果的变量，写在最左侧</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;new_num的值为：&#123;&#125;&quot;</span>.<span class="built_in">format</span>(new_num))</span><br><span class="line"></span><br><span class="line"><span class="comment"># 加一个判断条件，如果大于6，就取出来</span></span><br><span class="line">new_num_1 = [i <span class="keyword">for</span> nums_a <span class="keyword">in</span> nums <span class="keyword">for</span> i <span class="keyword">in</span> nums_a <span class="keyword">if</span> i &gt; <span class="number">6</span>]</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;new_num_1的值为：&#123;&#125;&quot;</span>.<span class="built_in">format</span>(new_num_1))</span><br><span class="line"></span><br><span class="line"><span class="comment"># 定义一个函数，求平方</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">square</span>(<span class="params">x</span>):</span></span><br><span class="line">    <span class="keyword">return</span> x * x</span><br><span class="line"></span><br><span class="line">new_num_2 = [square(i) <span class="keyword">for</span> nums_a <span class="keyword">in</span> nums <span class="keyword">for</span> i <span class="keyword">in</span> nums_a]  <span class="comment"># 把结果传到一个函数中</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;new_num_2的值为：&#123;&#125;&quot;</span>.<span class="built_in">format</span>(new_num_2))</span><br></pre></td></tr></table></figure>
-
-<p>打印结果如下:</p>
-<p><img src="da3cf7682fe58e583f3045ec8ebca04b.png" alt="screen-capture"></p>
-
       
     </div>
     <footer class="article-footer">
