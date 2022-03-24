@@ -71,6 +71,58 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-pytest框架" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2022/03/02/pytest%E6%A1%86%E6%9E%B6/" class="article-date">
+  <time class="dt-published" datetime="2022-03-02T05:59:43.277Z" itemprop="datePublished">2022-03-02</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h1 id="Pytest单元-自动化测试框架"><a href="#Pytest单元-自动化测试框架" class="headerlink" title="Pytest单元 / 自动化测试框架"></a>Pytest单元 / 自动化测试框架</h1><h2 id="一-、简要介绍"><a href="#一-、简要介绍" class="headerlink" title="一 、简要介绍"></a>一 、简要介绍</h2><p>（1）什么是单元测试框架</p>
+<p>单元测试是指在软件开发当中，针对软件的最小单位（函数方法）进行正确性的检查测试</p>
+<p>（2）单元测试框架</p>
+<p>java : junit / testing</p>
+<p>python: unittest / pytest</p>
+<p>（3）单元测试框架主要做什么</p>
+<p>1.测试发现：从多个文件中找到测试用例</p>
+<p>2.测试执行：按照一定的顺序和规则去执行，并生成结果</p>
+<p>3.测试判断：通过断言判断预期结果和实际结果的差异</p>
+<p>4.测试报告：统计测试进度，耗时。通过率，生成测试报告</p>
+<h2 id="二、单元测试框架和自动化测试框架的关系"><a href="#二、单元测试框架和自动化测试框架的关系" class="headerlink" title="二、单元测试框架和自动化测试框架的关系"></a>二、单元测试框架和自动化测试框架的关系</h2><p>1.提高测试效率，降低维护成本</p>
+<p>2.减少人工干预，提高测试的准确性，增加代码的复用性</p>
+<p>3.核心思想是让不懂代码的人能通过框架去实现自动化</p>
+<p>pom设计模式 、数据驱动 、 关键字驱动、全局配置文件的封装 、 日志监控 、selenium ,requests二次封装  、断言 、报告邮件 …..</p>
+<h2 id="三、pytest简介"><a href="#三、pytest简介" class="headerlink" title="三、pytest简介"></a>三、pytest简介</h2><p>pytest是一个非常成熟的单元测试框架，比unittest更灵活，容易上手，pytest可以和selenium，requests,appium 结合实现web自动化，APP自动化，接口自动化，可以实现测试用例的跳过以及失败后reruns，可以和Jenkins持续集成</p>
+<p>插件介绍：</p>
+<p>pytest-html   生成html格式的自动化测试报告</p>
+<p>pytest-xdist 测试用例分布式执行，多cpu分发</p>
+<p>pytest-ordering 用于改变测试用例的执行顺序</p>
+<p>pytest-rerunfailures 用例失败后重跑</p>
+<p>allure-pytest 生成美观的测试报告</p>
+<p>通过文本一键安装插件 pip install -r xx.txt</p>
+<h2 id="四、使用pytest，默认的测试用例的规则以及使用"><a href="#四、使用pytest，默认的测试用例的规则以及使用" class="headerlink" title="四、使用pytest，默认的测试用例的规则以及使用"></a>四、使用pytest，默认的测试用例的规则以及使用</h2><p>1.模块名必须以test_开头或_test结尾</p>
+<p>2.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2022/03/02/pytest%E6%A1%86%E6%9E%B6/" data-id="cl14uotqb0000lcvs7gvs8lr3" data-title="" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-python基础-列表推导式" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2022/01/21/python%E5%9F%BA%E7%A1%80-%E5%88%97%E8%A1%A8%E6%8E%A8%E5%AF%BC%E5%BC%8F/" class="article-date">
@@ -249,7 +301,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/01/">January 2022</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/03/">March 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/01/">January 2022</a></li></ul>
     </div>
   </div>
 
@@ -260,6 +312,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2022/03/02/pytest%E6%A1%86%E6%9E%B6/">(no title)</a>
+          </li>
         
           <li>
             <a href="/2022/01/21/python%E5%9F%BA%E7%A1%80-%E5%88%97%E8%A1%A8%E6%8E%A8%E5%AF%BC%E5%BC%8F/">(no title)</a>
